@@ -21,7 +21,7 @@ const WhatIfSimulator = () => {
     try {
       const token = localStorage.getItem('token');
       const res = await axios.post(
-        'http://localhost:5050/api/v1/ai/whatif',
+        'https://spendwise-backend-w4o0.onrender.com/api/v1/ai/whatif',
         { scenario: customScenario || scenario, amount: Number(amount), months },
         { headers: { Authorization: `Bearer ${token}` } }
       );

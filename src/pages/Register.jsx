@@ -16,7 +16,7 @@ const Register = () => {
     e.preventDefault();
     setLoading(true); setError('');
     try {
-      await axios.post('http://localhost:5050/api/auth/register', { name, email, password });
+      await axios.post('https://spendwise-backend-w4o0.onrender.com/api/auth/register', { name, email, password });
       navigate('/login');
     } catch (err) {
       setError(err.response?.data?.message || 'Registration failed');
