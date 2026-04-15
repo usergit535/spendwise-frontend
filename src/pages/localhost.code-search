@@ -1,0 +1,37 @@
+# Query: localhost
+
+29 results - 13 files
+
+src\components\AIAdvisorBot.jsx:
+  30:       const res = await axios.post('https://spendwise-backend-w4o0.onrender.comapi/v1/ai/chat',
+
+src\components\CurrencyConverter.jsx:
+  20:         `http://localhost:5050/api/v1/ai/currency/${from}/${to}/${amount}`,
+
+src\components\ExpensePrediction.jsx:
+  13:       const res = await axios.get('http://localhost:5050/api/v1/ai/predict', {
+
+src\pages\BudgetsPage.jsx:
+  17:       const res = await axios.get('http://localhost:5050/api/v1/budgets/report', {
+  30:       await axios.post('http://localhost:5050/api/v1/budgets/add', budgetData, {
+
+src\pages\Dashboard.jsx:
+   35:         axios.get('http://localhost:5050/api/v1/get-transactions', { headers }),
+   36:         axios.get('http://localhost:5050/api/v1/budgets/report', { headers })
+   62:           'http://localhost:5050/api/v1/ai/categorize',
+   87:       await axios.post('http://localhost:5050/api/v1/add-transaction', formData, {
+   98:       await axios.post('http://localhost:5050/api/v1/budgets/add', budgetData, {
+  109:       await axios.delete(`http://localhost:5050/api/v1/delete-transaction/${id}`, {
+
+src\pages\ExpensesPage.jsx:
+  23:       const res = await axios.get('http://localhost:5050/api/v1/get-transactions', {
+  38:       await axios.delete(`http://localhost:5050/api/v1/delete-transaction/${id}`, {
+  49:       await axios.post('http://localhost:5050/api/v1/add-transaction',
+
+src\pages\IncomesPage.jsx:
+  16:       const res = await axios.get('http://localhost:5050/api/v1/get-transactions', {
+  31:       await axios.delete(`http://localhost:5050/api/v1/delete-transaction/${id}`, {
+  42:       await axios.post('http://localhost:5050/api/v1/add-transaction',
+
+src\pages\Login.jsx:
+  19:       const res = await axios.post('http://localhost:5050/api/auth/login', { email, password });
